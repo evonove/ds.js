@@ -1,0 +1,32 @@
+{
+  "name": "hashmap.js",
+  "version": "0.0.0",
+  "description": "Javascript Hash map implementation for keys -> values mapping. Works even for Javascript objects",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/evonove/hashmap.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/evonove/hashmap.js/issues"
+  },
+  "keywords": [
+    "hashmap"
+  ],
+  "author": "Emanuele Palazzetti <emanuele.palazzetti@gmail.com>",
+  "homepage": "https://github.com/evonove/hashmap.js",
+  "license": "BSD",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint" : "~0.6.0",
+    "grunt-contrib-uglify" : "~0.2.2",
+    "grunt-contrib-concat" : "~0.3.0",
+    "grunt-contrib-watch"  : "~0.4.4",
+    "matchdep"             : "~0.1.2",
+    "grunt-mocha-test" : "~0.7.0"
+  }
+}

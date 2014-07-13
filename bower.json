@@ -1,0 +1,23 @@
+{
+  "name": "hashmap.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/evonove/hashmap.js",
+  "authors": [
+    "Emanuele Palazzetti <emanuele.palazzetti@gmail.com>"
+  ],
+  "description": "Javascript Hash map implementation for keys -> values mapping. Works even for Javascript objects",
+  "keywords": [
+    "hashmap"
+  ],
+  "license": "BSD",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}
+
