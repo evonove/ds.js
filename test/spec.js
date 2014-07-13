@@ -170,4 +170,15 @@ describe('Hashmap implementation', function () {
     item = hashmap.get(object);
     assert.equal(item, 'The Answer to the Ultimate Question of Life, The Universe, and Everything');
   });
+
+  it('should store two objects even if they are \'similiar\'', function () {
+    var firstObject = {hello: 'Hello world!'};
+    var secondObject = {hello: 'Hello world!'};
+
+    hashmap.put(firstObject, 'First object');
+    hashmap.put(secondObject, 'Second object');
+    assert.equal(hashmap.size, 2);
+    assert.equal(hashmap.get(firstObject), 'First object');
+    assert.equal(hashmap.get(secondObject), 'Second object');
+  });
 });
