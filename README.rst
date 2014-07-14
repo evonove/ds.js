@@ -5,6 +5,7 @@ Hashmap.js
 Javascript Hash map implementation for keys -> values mapping.
 
 It's really light:
+
 * ``hashmap.min.js``: 388 Bytes (gzip)
 
 Features
@@ -14,11 +15,6 @@ Features
 * Javascript primitives can be used as a key
 * Arrays and Javascript Objects can be used as a key
 * DOM elements can be used as a key
-
-Requirements
-------------
-
-None!
 
 Browsers and Node.js support
 ---------------------------
@@ -63,7 +59,7 @@ Just require this library in your code:
 
 .. code-block:: javascript
 
-    var Hashmap = require('../lib/hashmap.js').Hashmap
+    var Hashmap = require('node_modules/dist/hashmap.min.js').Hashmap
 
 You're done! Now you can use ``Hashmap`` constructor.
 
@@ -82,7 +78,7 @@ In your code simply create and access your new hashmap:
     var item = myMap.get(object);                   // Get element from hashmap
     assert.deepEqual(item, ['mapped', 'array']);    // true
 
-You can even use DOM elements as hashmap keys:
+You can even use DOM elements as a keys:
 
 .. code-block:: javascript
 
@@ -91,9 +87,9 @@ You can even use DOM elements as hashmap keys:
     var newContent = document.createTextNode("Hi there and greetings!");
     newDiv.appendChild(newContent);
 
-    myMap.put(newDiv, { title: 'this is my model' });
+    myMap.put(newDiv, { statement: 'this is my model instance' });
     var item = myMap.get(newDiv);
-    assert.deepEqual(item, { title: 'this is my model' });      // true
+    assert.deepEqual(item, { statement: 'this is my model instance' });      // true
 
 License
 -------
