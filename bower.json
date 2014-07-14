@@ -10,6 +10,9 @@
     "hashmap"
   ],
   "license": "BSD",
+  "main": [
+    "dist/hashmap.js"
+  ],
   "ignore": [
     "**/.*",
     "node_modules",
