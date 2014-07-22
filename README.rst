@@ -15,9 +15,10 @@ Features
 * Javascript primitives can be used as a key
 * Arrays and Javascript Objects can be used as a key
 * DOM elements can be used as a key
+* AMD module support
 
 Browsers and Node.js support
----------------------------
+----------------------------
 
 It supports the following browsers:
 
