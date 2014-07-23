@@ -1,11 +1,11 @@
 'use strict';
 
 var assert = require('assert')
-  , Hashmap = require('../lib/hashmap.js').Hashmap
+  , HashMap = require('../lib/hashmap.js').HashMap
   , hashmap;
 
 beforeEach(function(done){
-  hashmap = new Hashmap();
+  hashmap = new HashMap();
   done();
 });
 

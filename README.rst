@@ -51,7 +51,7 @@ Just add this *before* of all ``<script>`` tags where do you want to use ``Hashm
     <!-- Latest compiled and minified JavaScript -->
     <script src="bower_components/hashmapjs/dist/hashmap.min.js"></script>
 
-You're done! It now exposes a constructor in your global namespace: ``window.Hashmap``.
+You're done! It now exposes a constructor in your global namespace: ``window.HashMap``.
 
 Node.js configuration
 ~~~~~~~~~~~~~~~~~~~~~
@@ -60,9 +60,9 @@ Just require this library in your code:
 
 .. code-block:: javascript
 
-    var Hashmap = require('node_modules/dist/hashmap.min.js').Hashmap
+    var HashMap = require('node_modules/dist/hashmap.min.js').HashMap
 
-You're done! Now you can use ``Hashmap`` constructor.
+You're done! Now you can use ``HashMap`` constructor.
 
 Usage
 ~~~~~
@@ -73,7 +73,7 @@ In your code simply create and access your new hashmap:
 
     // Create useful objects
     var object = { description: 'This is a plain javascript object' };
-    var myMap = new Hashmap();                      // Create a new hashmap
+    var myMap = new HashMap();                      // Create a new hashmap
 
     myMap.put(object, ['mapped', 'array']);         // Add element to hashmap
     var item = myMap.get(object);                   // Get element from hashmap
