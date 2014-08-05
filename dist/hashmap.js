@@ -7,7 +7,8 @@
   if (typeof define === 'function' && define.amd) {
     define([], factory);
   } else {
-    root.HashMap = factory();
+    root.Ds = root.Ds || {};
+    root.Ds.HashMap = factory();
   }
 
 })(this, function () {
