@@ -7,18 +7,26 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     concat: {
-      dist: {
-        src: ['lib/{,*/}*.js'],
+      hashmap: {
+        src: 'lib/hashmap.js',
         dest: 'dist/hashmap.js'
+      },
+      set: {
+        src: 'lib/set.js',
+        dest: 'dist/set.js'
       }
     },
     uglify: {
       options: {
         report: 'gzip'
       },
-      dist: {
-        src: '<%= concat.dist.dest %>',
+      hashmap: {
+        src: '<%= concat.hashmap.dest %>',
         dest: 'dist/hashmap.min.js'
+      },
+      set: {
+        src: '<%= concat.set.dest %>',
+        dest: 'dist/set.min.js'
       }
     },
     clean: {
