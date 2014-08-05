@@ -1,21 +1,9 @@
-==========
-Hashmap.js
-==========
+=====
+ds.js
+=====
 
-Javascript Hash map implementation for keys -> values mapping.
-
-It's really light:
-
-* ``hashmap.min.js``: 388 Bytes (gzip)
-
-Features
---------
-
-* works like a traditional hashmap (``get`` and ``put``)
-* Javascript primitives can be used as a key
-* Arrays and Javascript Objects can be used as a key
-* DOM elements can be used as a key
-* AMD module support
+Javascript data structures to store primitive and complex Javascript objects.
+Every library file is an implementation of a data structure.
 
 Browsers and Node.js support
 ----------------------------
@@ -37,21 +25,38 @@ Quick start
 Four quick start options are available:
 
 * Download the latest release
-* Clone the repo: ``git clone https://github.com/evonove/hashmap.js.git``
-* Install via bower (browser): ``bower install hashmapjs``
-* Install via npm (node.js): ``npm install hashmapjs``
+* Clone the repo: ``git clone https://github.com/evonove/ds.js.git``
+* Install via bower (browser): ``bower install ds.js``
+* Install via npm (node.js): ``npm install ds.js``
+
+Available data structures
+-------------------------
+
+Hashmap
+~~~~~~~
+
+``hashmap.min.js``: 400 Bytes (gzip)
+
+Features
+~~~~~~~~
+
+* works like a traditional hashmap (``get`` and ``put``)
+* Javascript primitives can be used as a key
+* Arrays and Javascript Objects can be used as a key
+* DOM elements can be used as a key
+* AMD module support
 
 Browser configuration
 ~~~~~~~~~~~~~~~~~~~~~
 
-Just add this *before* of all ``<script>`` tags where do you want to use ``Hashmap.js``:
+Just add this *before* of all ``<script>`` tags where do you want to use ``ds.js``:
 
 .. code-block:: html
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="bower_components/hashmapjs/dist/hashmap.min.js"></script>
+    <script src="bower_components/ds.js/dist/hashmap.min.js"></script>
 
-You're done! It now exposes a constructor in your global namespace: ``window.HashMap``.
+You're done! It now exposes a constructor in your global namespace: ``window.Ds.HashMap``.
 
 Node.js configuration
 ~~~~~~~~~~~~~~~~~~~~~
@@ -60,9 +65,9 @@ Just require this library in your code:
 
 .. code-block:: javascript
 
-    var HashMap = require('node_modules/dist/hashmap.min.js').HashMap
+    var Ds = require('node_modules/ds.js/dist/hashmap.min.js').Ds
 
-You're done! Now you can use ``HashMap`` constructor.
+You're done! Now you can use ``Ds.HashMap`` constructor.
 
 Usage
 ~~~~~
@@ -73,7 +78,7 @@ In your code simply create and access your new hashmap:
 
     // Create useful objects
     var object = { description: 'This is a plain javascript object' };
-    var myMap = new HashMap();                      // Create a new hashmap
+    var myMap = new Ds.HashMap();                   // Create a new hashmap
 
     myMap.put(object, ['mapped', 'array']);         // Add element to hashmap
     var item = myMap.get(object);                   // Get element from hashmap

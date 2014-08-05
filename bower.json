@@ -1,17 +1,18 @@
 {
-  "name": "hashmap.js",
+  "name": "ds.js",
   "version": "0.0.0",
-  "homepage": "https://github.com/evonove/hashmap.js",
+  "homepage": "https://github.com/evonove/ds.js",
   "authors": [
     "Emanuele Palazzetti <emanuele.palazzetti@gmail.com>"
   ],
-  "description": "Javascript Hash map implementation for keys -> values mapping. Works even for Javascript objects",
+  "description": "Javascript data structures to store primitive and complex Javascript objects",
   "keywords": [
+    "data structures",
     "hashmap"
   ],
   "license": "BSD",
   "main": [
-    "dist/hashmap.js"
+    "dist/ds.js"
   ],
   "ignore": [
     "**/.*",
