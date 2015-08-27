@@ -14,6 +14,10 @@ module.exports = function(grunt) {
       set: {
         src: 'lib/set.js',
         dest: 'dist/set.js'
+      },
+      heap: {
+        src: 'lib/heap.js',
+        dest: 'dist/heap.js'
       }
     },
     uglify: {
@@ -27,6 +31,10 @@ module.exports = function(grunt) {
       set: {
         src: '<%= concat.set.dest %>',
         dest: 'dist/set.min.js'
+      },
+      heap: {
+        src: '<%= concat.heap.dest %>',
+        dest: 'dist/heap.min.js'
       }
     },
     clean: {
