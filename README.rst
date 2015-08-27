@@ -35,7 +35,9 @@ Available data structures
 Hashmap
 ~~~~~~~
 
-``hashmap.min.js``: 400 Bytes (gzip)
+``hashmap.min.js``: 389 Bytes (gzip)
+``set.min.js``: 508 Bytes (gzip)
+``heap.min.js``: 476 Bytes (gzip)
 
 Features
 ~~~~~~~~
